@@ -12,6 +12,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="assets/js/jquery.min.js"></script>
+		<script> 			
+			$(function(){
+			   $("#sidebar").load("sidebar.html"); 
+			  $("#footer").load("footer.html"); 
+			});
+			</script> 
 	</head>
 	<body class="is-preload">
 
@@ -26,16 +33,7 @@
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="workshop.html">Workshops</a></li>
-											<li><a href="products.html">Products</a></li>
-											<li><a href="technical-support.html">Technical Support</a></li>
-											<li><a href="team.html">Our Team</a></li>
-											<!-- <li><a href="elements.html">Elements</a></li> -->
-											<!-- <li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li> -->
-										</ul>
+										<div id="sidebar"></div>
 									</div>
 								</li>
 							</ul>
@@ -68,24 +66,11 @@
 					</article>
 
 		<!-- Footer -->
-		<footer id="footer">
-			<ul class="icons">
-				<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-				<li><a href="https://www.facebook.com/makemadness.in/" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="https://www.instagram.com/makemadness.in/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-				<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-				<li><a href="mailto:info.makemadness@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Make Madness</li>
-				<!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
-			</ul>
-		</footer>
-
+		<div id="footer"></div>
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<!-- <script src="assets/js/jquery.min.js"></script> -->
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
