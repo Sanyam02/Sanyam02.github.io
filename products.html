@@ -24,6 +24,27 @@
         $("#bottomBar").load("footer.html");
       });
     </script>
+    <style>
+      /* Style the buttons inside the tab */
+      .tab button {
+        /* background-color: inherit; */
+        /* float: left; */
+        /* border: none; */
+        /* outline: none; */
+        /* cursor: pointer; */
+        /* padding: 14px 16px; */
+        transition: 0.3s;
+        /* font-size: 17px; */
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        /* border: 1px solid #ccc; */
+        /* border-top: none; */
+      }
+    </style>
   </head>
   <body class="is-preload">
     <!-- Page Wrapper -->
@@ -51,7 +72,89 @@
         </header>
         <section class="wrapper style5">
           <div class="inner">
-            <h3>Stay tuned...</h3>
+            <h3>Pump Controller (Semi-Automatic)</h3>
+            <br />
+            <!-- <div class="tab"> -->
+            <ul class="actions fit">
+              <li>
+                <button
+                  class="tablinks button primary fit"
+                  onclick="openCity(event, 'About')"
+                  id="defaultOpen"
+                >
+                  About
+                </button>
+              </li>
+              <li>
+                <button
+                  class="tablinks button primary fit"
+                  fit
+                  onclick="openCity(event, 'Features')"
+                >
+                  Features
+                </button>
+              </li>
+            </ul>
+            <ul class="actions fit">
+              <li>
+                <button
+                  class="tablinks button primary fit"
+                  onclick="openCity(event, 'Technical Details/Specifications:')"
+                >
+                  Technical Details/Specifications:
+                </button>
+              </li>
+            </ul>
+            <!-- </div> -->
+
+            <div id="About" class="tabcontent">
+              <h3>About</h3>
+              <p>
+                Working: This Model Will Manually Switch ON And Automatically
+                Switch OFF The Motor.
+              </p>
+              <ul>
+                <li>Has Manual ON And AUTO OFF Operation.</li>
+                <li>AUTO OFF When Tank Is Full.</li>
+                <li>Suitable For Single phase Motor or Pump.</li>
+                <li>Has LED Indications For Motor ON. .</li>
+                <li>
+                  Has MANUAL Mode Functions To Start Motor. Manual ON And AUTO
+                  OFF Operation Occurs.
+                </li>
+                <li>Long Life & Easy to install.</li>
+                <li>Advanced Technology. Truly Made in India.</li>
+              </ul>
+            </div>
+
+            <div id="Features" class="tabcontent">
+              <h3>Features</h3>
+              <p></p>
+              <ul>
+                <li>Elegant Looks</li>
+                <li>No Man power Required To operate as Semi Automatic.</li>
+                <li>Avoid Overflow</li>
+                <li>Longer Life No Mechanical System</li>
+                <li>Saves Electricity</li>
+                <li>Control Underground Tank or Overhead Tank</li>
+                <li>Compact Plastic (Virgin) Housing</li>
+              </ul>
+            </div>
+
+            <div id="Technical Details/Specifications:" class="tabcontent">
+              <h3>Technical Details/Specifications:</h3>
+              <p></p>
+              <ul>
+                <li>Operating voltage (For Device) : 12V 1A DC Input</li>
+                <li>For Adaptor : 220-240 volts AC input, output: 12V 1A DC</li>
+                <li>Frequency 50 Hz.</li>
+                <li>Load capacity : 2 HP</li>
+              </ul>
+            </div>
+            <div>
+              <a href="contact.html" class="button">Contact for details</a>
+            </div>
+            <!-- <h3>Stay tuned...</h3>
             <p></p>
 
             <p></p>
@@ -61,7 +164,7 @@
             <h4></h4>
             <p></p>
 
-            <p></p>
+            <p></p> -->
           </div>
         </section>
       </article>
@@ -80,5 +183,23 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
   </body>
 </html>
