@@ -2188,6 +2188,10 @@ input[type="radio"] + label:before {
   color: #76ddff;
 }
 
+.icon.style4 {
+  color: #ffffff;
+}
+
 /* Image */
 
 .image {
@@ -2899,7 +2903,8 @@ button:disabled,
 }
 
 .wrapper.style1 {
-  background-color: #21b2a6;
+  /* background-color: #21b2a6; */
+  background-color: #e64a00;
   color: #c8ece9;
 }
 
