@@ -1,10 +1,49 @@
+<style>
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    padding-left: 1rem;
+  }
+  .dropdown-container-margin {
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+  }
+</style>
+
 <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="workshop.html">Workshops</a></li>
   <li><a href="products.html">Smart Products</a></li>
+  <li>
+    <a href="#" class="dropdown-btn">Shop<i class="fa fa-caret-down"></i></a>
+    <div class="dropdown-container">
+      <ul class="dropdown-container-margin">
+        <li><a href="edu-kits.html">Educational Kits</a></li>
+        <li><a href="products.html">Smart Products</a></li>
+      </ul>
+    </div>
+  </li>
   <li><a href="technical-support.html">Technical Support</a></li>
   <li><a href="team.html">Our Team</a></li>
   <!-- <li><a href="elements.html">Elements</a></li> -->
   <li><a href="contact.html">Contact Us</a></li>
   <!-- <li><a href="#">Log In</a></li> -->
 </ul>
+
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+</script>
