@@ -59,6 +59,12 @@
           opacity: 1;
         }
       }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+      }
     </style>
   </head>
   <body class="is-preload">
@@ -89,7 +95,32 @@
           <div class="inner">
             <p>Check out the details of our workshops series:</p>
             <ul class="actions fit">
-              <li>
+              <div class="col-1 col-2-medium">
+                <img
+                  src="images/Workshops/arduino_coding.png"
+                  alt=""
+                  class="center"
+                /><br />
+                <a
+                  href="javascript:openCity(event, 'Arduino Workshop');"
+                  class="button fit primary center"
+                  >Arduino Workshop</a
+                >
+              </div>
+              <br />
+              <div class="col-1 col-2-medium">
+                <img
+                  src="images/Workshops/3d_printing.jpg"
+                  alt=""
+                  class="center"
+                /><br />
+                <a
+                  href="javascript:openCity(event, '3D Printing Workshop');"
+                  class="button fit primary center"
+                  >3D Printing Workshop</a
+                >
+              </div>
+              <!-- <li>
                 <a
                   href="javascript:openCity(event, 'Arduino Workshop');"
                   class="button fit primary"
@@ -102,10 +133,35 @@
                   class="button fit primary"
                   >3D Printing Workshop</a
                 >
-              </li>
+              </li> -->
             </ul>
             <ul class="actions fit">
-              <li>
+              <div class="col-1 col-2-medium">
+                <img
+                  src="images/Workshops/App_development.jpg"
+                  alt=""
+                  class="center"
+                /><br />
+                <a
+                  href="javascript:openCity(event, 'Mobile App Development');"
+                  class="button fit primary center"
+                  >Mobile App Development</a
+                >
+              </div>
+              <br />
+              <div class="col-1 col-2-medium">
+                <img
+                  src="images/Workshops/other_cat.jpg"
+                  alt=""
+                  class="center"
+                /><br />
+                <a
+                  href="javascript:openCity(event, 'Others');"
+                  class="button fit primary center"
+                  >Others</a
+                >
+              </div>
+              <!-- <li>
                 <a
                   href="javascript:openCity(event, 'Mobile App Development');"
                   class="button fit primary"
@@ -118,16 +174,16 @@
                   class="button fit primary"
                   >Others</a
                 >
-              </li>
+              </li> -->
             </ul>
 
             <div id="Arduino Workshop" class="tabcontent">
               <h3>Arduino Workshop</h3>
-              <img
+              <!-- <img
                 src="images/Workshops/arduino_coding.png"
                 alt=""
                 width="30%"
-              />
+              /> -->
               <p>
                 Did you saw a Gate at Shopping Mall or ever wanted to make your
                 own Gadget? Well you can use Arduino to fulfill all your tech
@@ -164,11 +220,11 @@
             <div id="3D Printing Workshop" class="tabcontent">
               <div class="inner">
                 <h3>3D Printing Workshop</h3>
-                <img
+                <!-- <img
                   src="images/Workshops/3d_printing.jpg"
                   alt=""
                   width="30%"
-                />
+                /> -->
                 <p>
                   3D printing is one of the fastest emerging technology, several
                   industries are using this technology and creating their
@@ -206,11 +262,11 @@
             <div id="Mobile App Development" class="tabcontent">
               <div class="inner">
                 <h3>Mobile App Development</h3>
-                <img
+                <!-- <img
                   src="images/Workshops/App_development.jpg"
                   alt=""
                   width="30%"
-                />
+                /> -->
                 <p>
                   Want to learn how to make mobile apps for your Android phone
                   or tablet? Then this workshop is a chance for participants to
