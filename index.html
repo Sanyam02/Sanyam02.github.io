@@ -24,6 +24,18 @@
         $("#bottomBar").load("footer.html");
       });
     </script>
+    <style>
+      .imageBanner {
+        background-image: -webkit-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("./images/OLDbanner.jpg") !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
   </head>
   <body class="landing is-preload">
     <!-- Page Wrapper -->
@@ -195,7 +207,7 @@
       </section>
 
       <!-- CTA -->
-      <section id="cta" class="wrapper style4">
+      <section id="cta" class="wrapper style4 imageBanner">
         <div class="inner">
           <header>
             <h2>Have questions? Let’s Connect</h2>
